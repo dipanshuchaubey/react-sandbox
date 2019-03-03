@@ -3,13 +3,15 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ButtonAppBar from "./components/layout/Header";
 import RecipeReviewCard from "./components/Posts";
-import ResponsiveDialog from "./components/layout/About";
+import ScrollableTabsButtonForce from "./components/ForceScroll";
+import FullScreenDialog from "./components/layout/Sidebar";
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
         <ButtonAppBar />
+
         <div className="container mt-3 mb-3">
           <div className="row">
             <RecipeReviewCard
@@ -56,7 +58,8 @@ class App extends Component {
             />
           </div>
           <div className="text-center mt-2">
-            <ResponsiveDialog />
+            <ScrollableTabsButtonForce />
+            <FullScreenDialog />
           </div>
         </div>
       </React.Fragment>
